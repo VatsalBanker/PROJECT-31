@@ -1,7 +1,7 @@
 class Particles{
     constructor(x, y){
         var options = {
-            restittuttion : 0.4
+            restitution : 0.4
         }
         this.r = 10;
         this.body = Bodies.circle(x, y, this.r, options);
@@ -15,7 +15,7 @@ class Particles{
         push();
         translate(pos.x, pos.y);
         rotate(angle);
-        imageMode(CENTER);
+        ellipseMode(RADIUS);
         fill(this.color);
         ellipse(0, 0, this.r, this.r);
         pop();

@@ -1,7 +1,7 @@
 class Plinko{
     constructor(x, y){
         var options = {
-            restittuttion : 1,
+            restitution : 1,
             friciton : 0,
             isStatic : true
         }
@@ -16,7 +16,7 @@ class Plinko{
         push();
         translate(pos.x, pos.y);
         rotate(angle);
-        imageMode(CENTER);
+        ellipseMode(RADIUS);
         fill("white");
         ellipse(0, 0, this.r, this.r);
         pop();
